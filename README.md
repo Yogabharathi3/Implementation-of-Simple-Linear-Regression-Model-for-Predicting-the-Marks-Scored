@@ -92,7 +92,7 @@ print("RMSE = ",rmse)
 ![Screenshot 2023-08-24 151052](https://github.com/Yogabharathi3/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/118899387/dcc674db-03a0-42e5-b1fa-7c970b0253a9)
 
 # Test set graph
-![Screenshot 2023-08-24 151059](https://github.com/Yogabharathi3/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/118899387/05749830-1734-4192-8192-144be0029c03)
+![Screenshot 2023-08-24 152423](https://github.com/Yogabharathi3/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/118899387/c3b4148f-0bd9-4bc2-9860-323c79a7b952)
 
 # Values of MSE,MAE and RMSE
 ![Screenshot 2023-08-24 151113](https://github.com/Yogabharathi3/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/118899387/ebf187be-1101-4376-8ea7-3b153bcd2b0a)
