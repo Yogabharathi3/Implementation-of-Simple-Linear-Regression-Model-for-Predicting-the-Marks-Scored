@@ -1,16 +1,13 @@
 # Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored
 
 ## AIM:
-
 To write a program to predict the marks scored by a student using the simple linear regression model.
 
 ## Equipments Required:
-
 1. Hardware – PCs
 2. Anaconda – Python 3.7 Installation / Jupyter notebook
 
 ## Algorithm:
-
 1.Import the standard Libraries.
 
 2.Set variables for assigning dataset values.
@@ -37,41 +34,31 @@ import matplotlib.pyplot as plt
 from sklearn.metrics import mean_absolute_error,mean_squared_error
 df=pd.read_csv('student_scores.csv')
 df.head()
-
 df.tail()
-
 X = df.iloc[:,:-1].values
 X
-
 Y = df.iloc[:,1].values
 Y
-
 from sklearn.model_selection import train_test_split
 X_train,X_test,Y_train,Y_test=train_test_split(X,Y,test_size=1/3,random_state=0)
-
 from sklearn.linear_model import LinearRegression
 regressor = LinearRegression()
 regressor.fit(X_train,Y_train)
 Y_pred = regressor.predict(X_test)
-
 Y_pred
-
 Y_test
-
 plt.scatter(x_train,y_train,color='black')
 plt.plot(x_train,regressor.predict(x_train),color='red')
 plt.title("Hours vs Scores(Training set)")
 plt.xlabel("Hours")
 plt.ylabel("Scores")
 plt.show()
-
 plt.scatter(x_test,y_test,color='red')
 plt.plot(x_train,regressor.predict(x_train),color='black')
 plt.title("Hours vs Scores(Testing set)")
 plt.xlabel("Hours")
 plt.ylabel("Scores")
 plt.show()
-
 mse=mean_squared_error(Y_test,Y_pred)
 print('MSE = ',mse)
 mae=mean_absolute_error(Y_test,Y_pred)
